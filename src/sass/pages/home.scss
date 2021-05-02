@@ -1,0 +1,15 @@
+.container {
+    background: url("../../images/image-hero-mobile.jpg") no-repeat;
+    width: 100%;
+    height: 271.9rem;
+    
+}
+
+@media screen and (min-width: 751px){
+    .container {
+    background: url("../../images/image-hero-desktop.jpg") no-repeat;
+    width: 144rem;
+    height: 215.8rem;
+    margin: 0 auto;
+    }
+}
