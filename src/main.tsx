@@ -6,7 +6,7 @@ export default class Main extends Component<{}, any> {
     }
     render() {
      return (
-         <><p>Text text</p>
+         <>
          </>
      );
      }

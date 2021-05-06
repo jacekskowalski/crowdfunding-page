@@ -1,2 +1,24 @@
-
-
+.Navbar__Link{
+    padding: 4rem 5rem;
+&:not(.logo){
+    border: 1px solid $color-grey-light-2;
+    border-radius: 1rem;
+}
+}
+@media only screen and (min-width: 750px) and (max-width: 1000px){
+    .Navbar__Link{
+        padding-top: 3rem;
+        padding-right: 1rem;
+        &:not(.logo){
+            border: none;
+        }
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .Navbar__Link{
+        padding-right: 3.5rem;
+        &:not(.logo){
+            border: none;
+        }
+    }
+}

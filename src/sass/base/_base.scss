@@ -9,12 +9,17 @@
 html {
     // This defines what 1rem is
     font-size: 10px;
-
 }
 
 body {
     box-sizing: border-box;
     background-color: $color-grey-light-1;
-
+    margin: 0;
+    padding: 0;
    
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
 }

@@ -20,8 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "devserver": "live-server",
     "sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w",
-    "app": "npm-run-all --parallel start sass"
+    "app": "npm-run-all --parallel start sass devserver"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "live-server": "^1.2.1",
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5"
   }

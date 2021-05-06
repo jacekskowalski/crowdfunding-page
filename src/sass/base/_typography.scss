@@ -1,6 +1,31 @@
 body {
     font-family: "Commissioner", sans-serif;
     font-weight: 400;
- 
     color: $color-black;
+}
+.Navbar *{ 
+    color: $color-white; 
+
+}
+.Navbar >.logo {
+    font-size: 1.8rem;
+}
+#js-navbar-toggle {
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin:0;
+    padding:0;
+}
+.nav-links{
+    color:$color-black;
+font-size: $default-font-size;
+}
+
+@media only screen and (min-width: 750px) {
+    .Navbar >.logo {
+        font-size: 2.4rem;
+    }
+    .nav-links{
+        color: $color-white; 
+    }
 }

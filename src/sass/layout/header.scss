@@ -1,0 +1,98 @@
+.Navbar__Items,
+.Navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#js-navbar-toggle {
+    position: absolute;
+    top: $margin-medium;
+    right: 2.4rem;
+}
+.Navbar__Link{
+    display: flex;
+  justify-content: center;
+}
+.Navbar__Items{
+    flex:1;
+}
+.activeMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 5.8rem;
+    left: 0;
+    width: 100%;
+    height: 50rem;
+    background-color: $color-white;
+    justify-content: center;
+    z-index: 100;
+}
+.activePC{
+    display:none;
+}
+.logo{
+    position: absolute;
+    left: 2.4rem;
+    top:0;
+}
+
+.Navbar__Link-toggle {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: initial;
+    cursor: pointer; 
+}
+
+@media only screen and (min-width: 750px) {
+    .activeMobile{
+        display: none;
+    }
+
+    .activePC{
+         display: flex;
+      }
+
+    .Navbar { 
+        height: 5rem;
+        width: 100%;
+        @include flexDirection(row);
+
+       }
+      
+    .Navbar__Link{
+        height: 100%;
+    }
+
+ .Navbar__Items  {
+        display: -webkit-box;
+        display: -ms-flexbox;
+       @include flexDirection(row);
+         flex: 0;
+    }
+
+ .Navbar__Link-toggle{
+     display: none;
+ }
+   .Navbar__Items--right {
+    @include flexDirection(row);
+position: absolute;
+top:0;
+right: 2rem;
+    }
+    #js-navbar-toggle {
+        display: none;
+    }
+   
+}
+@media only screen and (min-width: 1000px) {
+    .logo{
+        left: 16.6rem;
+     }
+    .Navbar__Items--right {
+    right: 16.7rem;
+    }
+}
