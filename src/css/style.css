@@ -38,21 +38,163 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  display: block;
+  color: black; }
 
 body {
   font-family: "Commissioner", sans-serif;
   font-weight: 400;
   color: #000; }
 
-.container {
-  background: url("../../images/image-hero-mobile.jpg") no-repeat;
-  width: 100%;
-  height: 271.9rem; }
+.Navbar * {
+  color: #fff; }
 
-@media screen and (min-width: 751px) {
+.Navbar > .logo {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+#js-navbar-toggle {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0; }
+
+.nav-links {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500; }
+
+@media only screen and (min-width: 720px) {
+  .Navbar > .logo {
+    font-size: 2.4rem; }
+  .nav-links {
+    color: #fff; } }
+
+.Navbar__Link {
+  padding-top: 3.5rem; }
+  .Navbar__Link:not(.logo) {
+    border-bottom: 1px solid #eee;
+    height: 7rem; }
+
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
+  .Navbar__Link {
+    padding-right: 1rem; }
+    .Navbar__Link:not(.logo) {
+      border: none; } }
+
+@media only screen and (min-width: 1000px) {
+  .Navbar__Link {
+    padding-right: 3.5rem; }
+    .Navbar__Link:not(.logo) {
+      border: none; } }
+
+.Navbar {
+  z-index: 100; }
+
+.Navbar__Items,
+.Navbar {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+#js-navbar-toggle {
+  position: absolute;
+  top: 3.5rem;
+  right: 0rem;
+  padding-right: 2.3rem; }
+
+.Navbar__Link {
+  display: flex;
+  justify-content: center; }
+
+.Navbar__Items {
+  flex: 1; }
+
+.activeMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 8.8rem;
+  left: 2.3rem;
+  width: calc(100% - 46px);
+  height: auto;
+  background-color: #fff;
+  justify-content: center;
+  z-index: 100;
+  border-radius: 1rem; }
+
+.activePC {
+  display: none; }
+
+.logo {
+  position: absolute;
+  left: 2.3rem;
+  top: 0; }
+
+.Navbar__Link-toggle {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  display: initial;
+  cursor: pointer; }
+
+@media only screen and (min-width: 720px) {
+  .activeMobile {
+    display: none; }
+  .activePC {
+    display: flex; }
+  .Navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .Navbar__Items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex: 0; }
+  .Navbar__Link-toggle {
+    display: none; }
+  .Navbar__Items--right {
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 2.3rem; }
+  #js-navbar-toggle {
+    display: none; } }
+
+@media only screen and (min-width: 1000px) {
+  .logo {
+    left: 16.6rem; }
+  .Navbar__Items--right {
+    right: 16.7rem; } }
+
+.container {
+  max-width: 100vw;
+  height: 271.9rem;
+  position: relative; }
+
+.background__image {
+  max-width: 100vw;
+  height: auto; }
+
+@media screen and (min-width: 720px) {
   .container {
-    background: url("../../images/image-hero-desktop.jpg") no-repeat;
-    width: 144rem;
+    max-width: 144rem;
     height: 215.8rem;
     margin: 0 auto; } }

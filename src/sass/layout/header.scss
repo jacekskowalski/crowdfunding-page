@@ -1,3 +1,7 @@
+.Navbar{
+    z-index: 100;
+}
+
 .Navbar__Items,
 .Navbar {
     -webkit-box-orient: vertical;
@@ -8,8 +12,9 @@
 
 #js-navbar-toggle {
     position: absolute;
-    top: $margin-medium;
-    right: 2.4rem;
+    top: 3.5rem;
+    right: 0rem;
+    padding-right: 2.3rem;
 }
 .Navbar__Link{
     display: flex;
@@ -18,25 +23,26 @@
 .Navbar__Items{
     flex:1;
 }
-.activeMobile {
+ .activeMobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 5.8rem;
-    left: 0;
-    width: 100%;
-    height: 50rem;
+    top: 8.8rem;
+    left: 2.3rem;
+    width: calc(100% - 46px);
+    height: auto;
     background-color: $color-white;
     justify-content: center;
     z-index: 100;
+    border-radius: 1rem;
 }
 .activePC{
     display:none;
 }
 .logo{
     position: absolute;
-    left: 2.4rem;
+    left: 2.3rem;
     top:0;
 }
 
@@ -47,7 +53,7 @@
     cursor: pointer; 
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 720px) {
     .activeMobile{
         display: none;
     }
@@ -57,15 +63,16 @@
       }
 
     .Navbar { 
-        height: 5rem;
+        position: absolute;
+        top:0;
+        left:0;
+        height: auto;
         width: 100%;
         @include flexDirection(row);
 
        }
       
-    .Navbar__Link{
-        height: 100%;
-    }
+   
 
  .Navbar__Items  {
         display: -webkit-box;
@@ -81,7 +88,7 @@
     @include flexDirection(row);
 position: absolute;
 top:0;
-right: 2rem;
+right: 2.3rem;
     }
     #js-navbar-toggle {
         display: none;

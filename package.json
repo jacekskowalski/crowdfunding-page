@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "devserver": "live-server",
     "sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w",
-    "app": "npm-run-all --parallel start sass devserver"
+    "app": "npm-run-all --parallel devserver sass start"
   },
   "eslintConfig": {
     "extends": [

@@ -1,13 +1,12 @@
 .Navbar__Link{
-    padding: 4rem 5rem;
+    padding-top:3.5rem;
 &:not(.logo){
-    border: 1px solid $color-grey-light-2;
-    border-radius: 1rem;
+    border-bottom: 1px solid $color-grey-light-2;
+    height:7rem;
 }
 }
-@media only screen and (min-width: 750px) and (max-width: 1000px){
+@media only screen and (min-width: 720px) and (max-width: 1000px){
     .Navbar__Link{
-        padding-top: 3rem;
         padding-right: 1rem;
         &:not(.logo){
             border: none;

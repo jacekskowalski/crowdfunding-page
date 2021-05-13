@@ -9,6 +9,7 @@ body {
 }
 .Navbar >.logo {
     font-size: 1.8rem;
+    font-weight: 700;
 }
 #js-navbar-toggle {
     cursor: pointer;
@@ -19,9 +20,10 @@ body {
 .nav-links{
     color:$color-black;
 font-size: $default-font-size;
+font-weight: 500;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 720px) {
     .Navbar >.logo {
         font-size: 2.4rem;
     }
